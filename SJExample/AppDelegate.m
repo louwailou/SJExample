@@ -22,7 +22,7 @@
     self.services = [self sj_objection:@protocol(SJViewModelServicesProtocol)];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    [self.services resetRootTo:Router_Home animated:NO];
+    [self.services resetRootTo:Router_Login animated:NO];
     [self.window makeKeyAndVisible];
     return YES;
 }

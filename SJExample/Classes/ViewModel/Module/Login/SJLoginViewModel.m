@@ -32,4 +32,7 @@
 - (void)push {
      [self.services pushTo:Router_News animated:YES];
 }
+- (void)resetToRoot{
+    [self.services resetRootTo:Router_Home animated:NO];
+}
 @end

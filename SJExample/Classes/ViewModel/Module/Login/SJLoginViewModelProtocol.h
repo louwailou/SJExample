@@ -12,6 +12,7 @@
 @protocol SJLoginViewModelProtocol <SJViewModelProtocol>
 
 - (void)push;
+- (void)resetToRoot;
 
 @end
 

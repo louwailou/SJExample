@@ -26,6 +26,17 @@
         make.left.equalTo(self.view).mas_offset(50);
         make.size.mas_equalTo(CGSizeMake(100, 100));
     }];
+    
+    UIButton * resetToRoot = [UIButton buttonWithType:UIButtonTypeCustom];
+    [resetToRoot setTitle:@"toRoot" forState:UIControlStateNormal];
+    [resetToRoot setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [self.view addSubview:resetToRoot];
+    [resetToRoot addTarget:self.viewModel action:@selector(resetToRoot) forControlEvents:UIControlEventTouchUpInside];
+    [resetToRoot mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view).mas_offset(300);
+        make.left.equalTo(self.view).mas_offset(50);
+        make.size.mas_equalTo(CGSizeMake(100, 100));
+    }];
     // Do any additional setup after loading the view.
 }
 
