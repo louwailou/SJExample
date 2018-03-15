@@ -1,2 +1,2 @@
 # SJExample
- 一个使用Objection 实现VC解耦的framework
+ 一个使用Objection 实现VC解耦的structure
